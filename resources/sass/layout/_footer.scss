@@ -1,0 +1,228 @@
+$font-primary: "Nunito Sans", Arial, sans-serif;
+$primary-text-color: rgba(255, 255, 255, 0.3);
+$team-color: #e14d2a;
+
+.footer__flex {
+    display: flex;
+}
+
+.form-control {
+    height: 52px;
+    background: $white;
+    color: $black;
+    font-size: 18px;
+    border-radius: 0px;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+}
+
+#footer {
+    background: #272727;
+
+    .footer__container {
+        margin: 0;
+        padding: 0;
+    }
+
+	.footer__widget-wrapper {
+		width: 100%;
+		justify-content: space-evenly;
+
+		.footer__widget-4 {
+
+			div {
+				width: 80%;
+			}
+		}
+
+		.footer__widget-5 {
+			margin: 0 0 0 -100px;
+
+			& > div:first-of-type {
+				width: 300px;
+			}
+		}
+	}
+
+    .footer__row {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .footer__container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .border-top {
+        border-color: darken(#272727, 5%) !important;
+        background: darken(#272727, 5%);
+    }
+
+    .footer-heading {
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-family: $font-primary;
+        line-height: 3;
+		white-space: nowrap;
+    }
+
+    .form-control::placeholder {
+        font-family: "Cambria", serif;
+    }
+
+    .list-unstyled {
+        li {
+            .menu-link {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.7);
+                transition: 0.3s all ease;
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+				line-height: 2;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .subscribe-form {
+        .form-group {
+            position: relative;
+            margin-bottom: 0;
+
+            input {
+                background: rgba(255, 255, 255, 0.05) !important;
+                color: rgba(255, 255, 255, 0.3) !important;
+                font-size: 16px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+
+            .submit {
+                width: 52px;
+                height: 52px;
+                font-size: 16px;
+                background: $team-color !important;
+                justify-content: center;
+                align-items: center;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none !important;
+                    outline: none !important;
+                }
+            }
+
+            .subscribe-icon-container {
+                justify-content: center;
+                align-items: center;
+
+                .subscribe-icon {
+                    height: 16px;
+                    width: 16px;
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
+.footer__site-logo {
+    .site-logo {
+        width: 200px;
+    }
+}
+
+.ft-text-color {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ft-business-location {
+    font-family: $primary-text-color;
+}
+
+#ft-email {
+    line-height: 1.5;
+}
+
+#ft-contact {
+    line-height: 2;
+}
+
+#ft-email::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.ftco-footer-social {
+    li {
+        list-style: none;
+        margin: 0 10px 0 0;
+        display: inline-block;
+
+        .social-link {
+            height: 40px;
+            width: 40px;
+            display: block;
+            background: rgba(black, 0.05);
+            border-radius: 4px;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            .footer__follow-us {
+                position: absolute;
+                font-size: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                justify-content: center;
+                align-items: center;
+                pointer-events: none;
+
+                .social-media-icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.footer__bottom {
+    .footer__bottom-container-fluid {
+        background: #1a1a1a;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+
+        .footer__bottom-copyright {
+            padding: 0;
+            margin: 0;
+            color: white;
+
+            .team-name {
+                color: $team-color;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+}

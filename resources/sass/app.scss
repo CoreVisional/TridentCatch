@@ -19,6 +19,14 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 @import 'abstracts/global';
 @import 'base/global';
 @import 'components/global';
-@import 'layout/global';
+@import 'layouts/global';
 @import 'pages/global';
 
+
+
+// Uncomment to compile to CSS
+// @import '../../node_modules/bootstrap/scss/bootstrap';
+// @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+// @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+// @import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+// @import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';

@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Str;
 
+// Used for Heroku ClearDB MYSQL
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
 $host = $url["host"] ?? null;
 $username = $url["user"] ?? null;
 $password = $url["pass"] ?? null;

@@ -2,7 +2,7 @@
 /public/build
 /public/hot
 /public/storage
-# /public/css/*.css.map
+/public/css/*.css.map
 /storage/*.key
 /vendor
 .env

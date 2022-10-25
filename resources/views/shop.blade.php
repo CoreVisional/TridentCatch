@@ -6,14 +6,14 @@
 
 <!-- Breadcrumb Section Begin -->
 <x-breadcrumbs>
-    <h4>Shop</h4>
-    <div class="breadcrumb__text-container breadcrumb__flex">
-        <div class="breadcrumb__text breadcrumb__flex">
-            <a class="breadcrumb__text-home breadcrumb__flex" href="{{ route('home') }}">Home</a>
-            <span class="breadcrumb__separator breadcrumb__flex">
+    <div class="breadcrumbs__text-container">
+        <h4>Shop</h4>
+        <div class="breadcrumbs__text breadcrumbs__flex">
+            <a class="breadcrumbs__text-home" href="{{ route('home') }}">Home</a>
+            <span class="breadcrumbs__separator breadcrumbs__flex">
                 <x-svg.icons.shop.breadcrumbs class="angle-right-icon" />
             </span>
-            <span class="breadcrumb__text-shop breadcrumb__flex">Shop</span>
+            <span class="breadcrumbs__text-shop breadcrumbs__flex">Shop</span>
         </div>
     </div>
 </x-breadcrumbs>
@@ -21,13 +21,16 @@
 
 <section class="shop__product-section container">
     {{-- Sidebar --}}
-    <div class="sidebar">
+    <div class="shop__sidebar">
         <h3>Categories</h3>
         <ul class="shop__category">
             @foreach ($categories as $category)
-            <li><a class="{{ $category->name == $categoryName ? 'active-cat' : '' }}"
-                    href="{{ route('shop.index', ['category' => $category->slug]) }}">{{
-                    $category->name }}</a></li>
+                <li>
+                    <a class="{{ $category->name == $categoryName ? 'active-cat' : '' }}"
+                        href="{{ route('shop.index', ['category' => $category->slug]) }}">{{
+                        $category->name }}
+                    </a>
+                </li>
             @endforeach
         </ul>
     </div>
@@ -37,7 +40,6 @@
     {{-- Product filter Section --}}
     <div class="shop__products-wrapper">
         <div class="shop__products-header shop__flex">
-            {{ $products->appends(request()->input())->links() }}
             <div class="shop__products-filter">
                 <strong>Sort by Price:</strong>
                 <select>
@@ -74,9 +76,8 @@
         </div>
         {{-- End of main product listings --}}
 
-        <div class="spacer">
-            {{ $products->appends(request()->input())->links() }}
-        </div>
+        <div class="spacer"></div>
+        {{ $products->appends(request()->input())->links() }}
         {{-- End of product section --}}
     </div>
     {{-- End of page content --}}

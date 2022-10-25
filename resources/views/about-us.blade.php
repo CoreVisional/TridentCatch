@@ -9,7 +9,7 @@
     <div class="container">
         <div class="section-title">
             <h2>Team</h2>
-            <p>This is our team. In consists of three members where Alex is the CEO, Amsyar being the CTO, and Ivy is our CDO. Our team is from APU Web Solution Sdn Bhd. where we named ourselves as the "3RedDots".</p>
+            <p>Our team consists of three members, Alex, Amsyar, and Ivy, and in which we name ourselves as the "3RedDots" team under APU Web Solution Sdn Bhd.</p>
         </div>
 
         <div class="row team__flex">
@@ -17,10 +17,7 @@
                 <div class="member">
                     <img class="profile-img" src="{{ asset('assets/img/team_img/team-img-1.png') }}" alt="">
                     <h4>Alex Chiew</h4>
-                    <span>Chief Executive Officer</span>
-                    <p>
-                        Group Leader
-                    </p>
+                    <span>Full-Stack Developer</span>
                     <div class="social">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -34,10 +31,7 @@
                 <div class="member">
                     <img src="{{ asset('assets/img/team_img/team-img-2.png') }}" alt="">
                     <h4>Amsyar Fiqrie</h4>
-                    <span>Chief Technology Officer</span>
-                    <p>
-                        Database Engineer
-                    </p>
+                    <span>Full-Stack Developer</span>
                     <div class="social">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -51,10 +45,7 @@
                 <div class="member">
                     <img src="{{ asset('assets/img/team_img/team-img-3.png') }}" alt="">
                     <h4>Ivy Natasha</h4>
-                    <span>Chief Design Officer</span>
-                    <p>
-                        Frontend Designer
-                    </p>
+                    <span>Frontend Designer</span>
                     <div class="social">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>

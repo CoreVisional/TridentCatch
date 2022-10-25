@@ -11,21 +11,31 @@
                 <form class="register__form" method="POST" action="{{ route('register') }}">
                     @csrf
 
-                    <div class="register__text-field top-down-margin">
-                        <input id="name" name="name" type="text" class="@error('name') is-invalid @enderror"
-                            value="{{ old('name') }}" required placeholder="Username">
+                    <div class="register__text-field">
+                        <input id="name" name="name" type="text" value="{{ old('name') }}" required placeholder="Username">
                         <label for="name" class="sr-only">{{ __('Username') }}</label>
+
+                        @error('name')
+                            <strong class="invalid-feedback" role="alert">
+                                {{ $message }}
+                            </strong>
+                        @enderror
                     </div>
 
-                    <div class="register__text-field top-down-margin">
-                        <input id="email" class="@error('email') is-invalid @enderror" name="email"
-                            value="{{ old('email') }}" type="email" required autocomplete="email"
+                    <div class="register__text-field">
+                        <input id="email" name="email" value="{{ old('email') }}" type="email" required autocomplete="email"
                             placeholder="Email Address">
                         <label for="email" class="sr-only">{{ __('Email Address') }}</label>
+
+                        @error('email')
+                            <strong class="invalid-feedback" role="alert">
+                                {{ $message }}
+                            </strong>
+                        @enderror
                     </div>
 
-                    <div class="register__text-field top-down-margin">
-                        <input id="password" class="@error('password') is-invalid @enderror" name="password"
+                    <div class="register__text-field">
+                        <input id="password" name="password"
                             type="password" required placeholder="Password">
                         <label for="password" class="sr-only">{{ __('Password') }}</label>
 
@@ -36,10 +46,8 @@
                         @enderror
                     </div>
 
-                    <div class="register__text-field margin-bottom-zero">
-                        <input id="password_confirmation" name="password_confirmation" type="password"
-                            class="@error('password_confirmation') is-invalid @enderror" required
-                            placeholder="Confirm Password">
+                    <div class="register__text-field">
+                        <input id="password_confirmation" name="password_confirmation" type="password" required placeholder="Confirm Password">
                         <label for="password_confirmation" class="sr-only">{{ __('Confirm Password') }}</label>
                     </div>
 

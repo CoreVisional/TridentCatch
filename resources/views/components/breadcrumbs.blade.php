@@ -1,9 +1,7 @@
-<section class="breadcrumb breadcrumbs__flex">
-    <div class="breadcrumb__container container breadcrumbs__flex">
-        <div class="breadcrumb__row">
-            {{ $slot }}
-        </div>
-        <div class="breadcrumbs__search">
+<section class="breadcrumbs breadcrumbs__flex">
+    <div class="breadcrumbs__container container breadcrumbs__flex">
+        {{ $slot }}
+        <div class="search">
             @include('partials._search')
         </div>
     </div>

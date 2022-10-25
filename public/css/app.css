@@ -21055,33 +21055,25 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.header__nav-search-container {
-  width: 50%;
+.search-wrapper {
+  width: 100%;
 }
-.header__nav-search-container .header__nav-search-wrapper {
-  justify-content: center;
-}
-
-.header__nav-search-wrapper {
-  width: 500px;
-  margin: 38px auto;
-}
-.header__nav-search-wrapper .header__nav-search-bar {
+.search-wrapper .search-bar {
   position: relative;
   width: 350px;
   height: 40px;
 }
-.header__nav-search-wrapper .header__nav-search-bar .search-term,
-.header__nav-search-wrapper .header__nav-search-bar .header__nav-search-btn {
+.search-wrapper .search-bar .search-term,
+.search-wrapper .search-bar .search-btn {
   top: 0;
   height: 100%;
   border: none;
 }
-.header__nav-search-wrapper .header__nav-search-bar .header__nav-search-btn,
-.header__nav-search-wrapper .header__nav-search-bar .search-icon {
+.search-wrapper .search-bar .search-btn,
+.search-wrapper .search-bar .search-icon {
   position: absolute;
 }
-.header__nav-search-wrapper .header__nav-search-bar .search-term {
+.search-wrapper .search-bar .search-term {
   left: 0;
   width: 100%;
   padding: 10px 20px;
@@ -21090,7 +21082,7 @@ readers do not read off random characters that represent icons */
   font-size: 12pt;
   border: 2px solid #000;
 }
-.header__nav-search-wrapper .header__nav-search-bar .header__nav-search-btn {
+.search-wrapper .search-bar .search-btn {
   right: 0;
   width: 40px;
   background: #000;
@@ -21099,60 +21091,61 @@ readers do not read off random characters that represent icons */
   border-radius: 50%;
   border: 2px solid #000;
 }
-.header__nav-search-wrapper .header__nav-search-bar .header__nav-search-btn .search-icon {
+.search-wrapper .search-bar .search-btn .search-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   fill: #fff;
   font-size: 20px;
 }
-.header__nav-search-wrapper .header__nav-search-bar .header__nav-search-btn:hover {
+.search-wrapper .search-bar .search-btn:hover {
   background: #318ce7;
 }
 
-.breadcrumb {
+.breadcrumbs {
   background: #f3f2ee;
-  padding: 40px 0;
+  padding: 35px 0;
 }
 
-.breadcrumb__flex {
+.breadcrumbs__flex {
   display: flex;
 }
 
-.breadcrumb__container {
-  justify-content: center;
+.breadcrumbs__container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.breadcrumbs__container .breadcrumbs__text-container {
   align-items: center;
 }
-.breadcrumb__container h4, .breadcrumb__container .h4 {
+.breadcrumbs__container .breadcrumbs__text-container h4, .breadcrumbs__container .breadcrumbs__text-container .h4 {
   color: #111111;
   font-weight: 700;
   margin-bottom: 8px;
 }
-.breadcrumb__container .breadcrumb__text-container {
-  align-items: center;
-}
-.breadcrumb__container .breadcrumb__text-container .breadcrumb__text {
+.breadcrumbs__container .breadcrumbs__text-container .breadcrumbs__text {
   width: 50%;
   align-items: center;
   justify-content: flex-start;
 }
-.breadcrumb__container .breadcrumb__text-container .breadcrumb__text .breadcrumb__text-home {
+.breadcrumbs__container .breadcrumbs__text-container .breadcrumbs__text .breadcrumbs__text-home {
   font-size: 15px;
   color: #111111;
   text-decoration: none;
   align-items: center;
 }
-.breadcrumb__container .breadcrumb__text-container .breadcrumb__text .breadcrumb__text-shop {
+.breadcrumbs__container .breadcrumbs__text-container .breadcrumbs__text .breadcrumbs__text-shop {
   font-size: 15px;
   color: #727272;
   align-items: center;
 }
-.breadcrumb__container .breadcrumb__text-container .breadcrumb__text .breadcrumb__separator {
+.breadcrumbs__container .breadcrumbs__text-container .breadcrumbs__text .breadcrumbs__separator {
   align-items: center;
   margin-right: 5px;
   margin-left: 5px;
 }
-.breadcrumb__container .breadcrumb__text-container .breadcrumb__text .breadcrumb__separator .angle-right-icon {
+.breadcrumbs__container .breadcrumbs__text-container .breadcrumbs__text .breadcrumbs__separator .angle-right-icon {
   width: 14px;
   height: 14px;
 }
@@ -21763,8 +21756,26 @@ readers do not read off random characters that represent icons */
   grid-template-columns: 1fr 3fr;
   margin: 80px auto 80px;
 }
-.shop__product-section .shop__sidebar li.active {
+.shop__product-section .shop__sidebar h3, .shop__product-section .shop__sidebar .h3 {
+  margin: 0 0 16px -1px;
+}
+.shop__product-section .shop__sidebar .shop__category {
+  line-height: 2;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.shop__product-section .shop__sidebar .shop__category li.active {
   font-weight: 500;
+}
+.shop__product-section .shop__sidebar .shop__category a {
+  font-size: 17px;
+  font-family: "Roboto", Arial, sans-serif;
+  text-decoration: none;
+  color: #212121;
+}
+.shop__product-section .shop__sidebar .shop__category a:visited {
+  color: #C58AF9;
 }
 .shop__product-section .shop__products-wrapper .shop__products-header {
   justify-content: space-between;
@@ -21842,7 +21853,7 @@ readers do not read off random characters that represent icons */
 #team .member {
   text-align: center;
   margin-bottom: 50px;
-  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.25);
   padding: 30px 20px;
   background: #fff;
 }
@@ -21860,12 +21871,7 @@ readers do not read off random characters that represent icons */
   font-style: italic;
   display: block;
   font-size: 13px;
-}
-#team .member p {
   padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #aaaaaa;
 }
 #team .member .social {
   margin-top: 15px;
@@ -22019,17 +22025,9 @@ readers do not read off random characters that represent icons */
 .register .register__form {
   padding: 0 40px;
 }
-.register .top-down-margin {
-  margin: 32px 0;
-}
-.register .margin-bottom-zero {
-  margin-top: 32px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
 .register .register__text-field {
   border-bottom: 1px solid #adadad;
+  margin: 32px 0;
   position: relative;
 }
 .register .register__text-field label {
@@ -22057,7 +22055,7 @@ readers do not read off random characters that represent icons */
   border: 1px solid;
   background: #2691d9;
   border-radius: 25px;
-  margin-top: 8%;
+  margin-top: 3%;
   font-size: 16px;
   color: #e9f4fb;
   font-weight: 700;
@@ -22108,17 +22106,9 @@ readers do not read off random characters that represent icons */
 .login .login__form {
   padding: 0 40px;
 }
-.login .top-down-margin {
-  margin: 32px 0;
-}
-.login .margin-bottom-zero {
-  margin-top: 32px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
 .login .login__text-field {
   border-bottom: 1px solid #adadad;
+  margin: 32px 0;
   position: relative;
 }
 .login .login__text-field label {

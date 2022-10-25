@@ -30,19 +30,9 @@
         padding: 0 40px;
     }
 
-    .top-down-margin {
-        margin: 32px 0;
-    }
-
-    .margin-bottom-zero {
-        margin-top: 32px;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
     .login__text-field {
         border-bottom: 1px solid #adadad;
+        margin: 32px 0;
         position: relative;
 
         label {

@@ -21778,12 +21778,29 @@ readers do not read off random characters that represent icons */
   color: #C58AF9;
 }
 .shop__product-section .shop__products-wrapper .shop__products-header {
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.shop__product-section .shop__products-wrapper .shop__products-header .shop__products-filter {
+  gap: 15px;
+}
+.shop__product-section .shop__products-wrapper .shop__products-header .shop__products-filter strong {
+  align-items: center;
+}
+.shop__product-section .shop__products-wrapper .shop__products-header .shop__products-filter select {
+  width: 220px;
+  height: 35px;
+  padding: 5px 35px 5px 12px;
+  border: 1px solid #CCC;
 }
 .shop__product-section .shop__products-listings {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 60px 30px;
+}
+.shop__product-section .shop__products-listings .shop__product-info .shop__product-name {
+  text-decoration: none;
+  color: black;
 }
 .shop__product-section .shop__products-listings .shop__products-price {
   color: #919191;
@@ -21791,6 +21808,7 @@ readers do not read off random characters that represent icons */
 .shop__product-section .shop__products-listings img {
   width: 200px;
   height: 200px;
+  margin-bottom: 15px;
 }
 .shop__product-section .shop__products-listings .spacer {
   margin-bottom: 30px;
@@ -21875,10 +21893,13 @@ readers do not read off random characters that represent icons */
 }
 #team .member .social {
   margin-top: 15px;
+  justify-content: center;
+  gap: 20px;
 }
 #team .member .social a {
   color: #919191;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 * {

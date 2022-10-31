@@ -40,14 +40,14 @@
     {{-- Product filter Section --}}
     <div class="shop__products-wrapper">
         <div class="shop__products-header shop__flex">
-            <div class="shop__products-filter">
-                <strong>Sort by Price:</strong>
-                <select>
+            <div class="shop__products-filter shop__flex">
+                <strong class="shop__flex">Sort by:</strong>
+                <select name="order-by" class="order-by" aria-label="Order By">
                     <a href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'low_high']) }}">
-                        <option value="">Low to High</option>
+                        <option value="">Price, Low to High</option>
                     </a>
                     <a href="{{ route('shop.index', ['category' => request()->category, 'sort' => 'high_low']) }}">
-                        <option value="">High to Low</option>
+                        <option value="">Price, High to Low</option>
                     </a>
                 </select>
             </div>
@@ -61,8 +61,8 @@
                 <a href="{{ route('shop.show', $product->slug) }}">
                     <img src="{{ productImage($product->image) }}" alt="product">
                 </a>
-                <a href="{{ route('shop.show', $product->slug) }}">
-                    <div class="shop__products-name">
+                <a class="shop__product-name" href="{{ route('shop.show', $product->slug) }}">
+                    <div>
                         {{ $product->name }}
                     </div>
                 </a>

@@ -38,7 +38,23 @@
 
     .shop__products-wrapper {
         .shop__products-header {
-            justify-content: space-between;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+
+            .shop__products-filter {
+                gap: 15px;
+
+                strong {
+                    align-items: center;
+                }
+
+                select {
+                    width: 220px;
+                    height: 35px;
+                    padding: 5px 35px 5px 12px;
+                    border: 1px solid #CCC;
+                }
+            }
         }
     }
 
@@ -47,6 +63,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 60px $gutter;
 
+        .shop__product-info {
+            .shop__product-name {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
         .shop__products-price {
             color: #919191;
         }
@@ -54,6 +77,7 @@
         img {
             width: 200px;
             height: 200px;
+            margin-bottom: 15px;
         }
 
         .spacer {

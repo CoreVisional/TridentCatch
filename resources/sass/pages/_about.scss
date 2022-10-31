@@ -89,10 +89,13 @@
 
         .social {
             margin-top: 15px;
+            justify-content: center;
+            gap: 20px;
 
             a {
                 color: #919191;
                 transition: 0.3s;
+                text-decoration: none;
             }
         }
     }

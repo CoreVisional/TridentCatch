@@ -18,7 +18,7 @@
                     <img class="profile-img" src="{{ asset('assets/img/team_img/team-img-1.png') }}" alt="">
                     <h4>Alex Chiew</h4>
                     <span>Full-Stack Developer</span>
-                    <div class="social">
+                    <div class="social header__flex">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -31,8 +31,8 @@
                 <div class="member">
                     <img src="{{ asset('assets/img/team_img/team-img-2.png') }}" alt="">
                     <h4>Amsyar Fiqrie</h4>
-                    <span>Full-Stack Developer</span>
-                    <div class="social">
+                    <span>Database Engineer</span>
+                    <div class="social header__flex">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -46,7 +46,7 @@
                     <img src="{{ asset('assets/img/team_img/team-img-3.png') }}" alt="">
                     <h4>Ivy Natasha</h4>
                     <span>Frontend Designer</span>
-                    <div class="social">
+                    <div class="social header__flex">
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>

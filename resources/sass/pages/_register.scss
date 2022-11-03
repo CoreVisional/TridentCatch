@@ -54,7 +54,7 @@
             outline: none;
 
             &:focus::placeholder {
-                color: transparent;
+                visibility: hidden;
             }
         }
     }

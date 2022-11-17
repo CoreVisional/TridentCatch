@@ -29,7 +29,7 @@ class ContactUsFormController extends Controller {
             $message->from($request->email);
             $message->to('alexchiew.student@gmail.com', 'Admin')->subject($request->get('subject'));
         });
-        
+
         return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
     }
 }

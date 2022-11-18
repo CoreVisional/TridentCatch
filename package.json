@@ -14,8 +14,6 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
-        "@algolia/autocomplete-js": "^1.7.1",
-        "algoliasearch": "^4.14.2",
         "animate.css": "^4.1.1",
         "bootstrap": "^5.2.2",
         "bootstrap-icons": "^1.9.1",

@@ -15,7 +15,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        $pagination = 8;
+        $pagination = 9;
         $categories = Category::all();
 
         if (request()->category) {
@@ -30,7 +30,7 @@ class ShopController extends Controller
         } elseif (request()->sort == "high_low") {
             $products = $products->orderBy('price', 'desc')->paginate($pagination);
         } else {
-            $products = Product::paginate();
+            $products = Product::paginate($pagination);
         }
 
         return view('shop')->with([

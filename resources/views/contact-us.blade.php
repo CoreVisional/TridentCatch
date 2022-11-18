@@ -16,17 +16,17 @@
             <div class="col-lg-5 d-flex align-items-stretch">
                 <div class="business-info">
                     <div class="business-address">
-                        <i class="bi bi-geo-alt contact-us__flex"></i>
+                        <i class="fa-solid fa-location-dot contact-us__flex"></i>
                         <h4>Location:</h4>
                         <p>12A, Jalan Kuchai Maju 1, Off, Jalan Kuchai Lama, 58200, Kuala Lumpur</p>
                     </div>
                     <div class="business-email">
-                        <i class="bi bi-envelope contact-us__flex"></i>
+                        <i class="fa-solid fa-envelope contact-us__flex"></i>
                         <h4>Email:</h4>
                         <p>tridentcatch@gmail.com</p>
                     </div>
                     <div class="phone-number">
-                        <i class="bi bi-phone contact-us__flex"></i>
+                        <i class="fa-solid fa-phone contact-us__flex"></i>
                         <h4>Phone Number:</h4>
                         <p>011-60866135</p>
                     </div>

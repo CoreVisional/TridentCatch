@@ -7,10 +7,6 @@ import * as bootstrap from 'bootstrap';
 // Import animated.css
 import 'animate.css';
 
-// Import Algolia Search Autocomplete
-import { autocomplete } from "@algolia/autocomplete-js";
-
-
 // Import customer footer JS
 import './footer/social-media-tooltip';
 import './footer/disable-tooltip';

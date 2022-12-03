@@ -16,7 +16,6 @@ export default defineConfig({
                 __dirname,
                 "node_modules/@fontawesome"
             ),
-            // "@algolia": path.resolve(__dirname, "node_modules/@algolia"),
         },
     },
 });

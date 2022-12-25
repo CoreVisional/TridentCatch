@@ -13,6 +13,7 @@ Homestead.yaml
 auth.json
 npm-debug.log
 yarn-error.log
+public/assets/img/team_img
 /.idea
 /.vscode
 .DS_Store
